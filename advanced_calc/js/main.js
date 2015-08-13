@@ -26,5 +26,6 @@ calculator.addEventListener('click', function () {
     } else if (operator === "/") {
       var ans1 = (form1 / form2);
     }; 
+    document.getElementById("basic-answer").className = "show";
     document.getElementById("basic-answer-alert").innerHTML = ans1;
 });
