@@ -17,14 +17,14 @@ calculator.addEventListener('click', function () {
   console.log(form2);
   var operator = document.getElementById("basic-operation").value;
   console.log(operator);
-    if (operator === "plus") {
-      console.log(basicNum1 + basicNum2);
-    } else if (operator === "minus") {
-      console.log(basicNum1 - basicNum2);
-    } else if (operator === "multiplied by") {
-      console.log(basicNum1 * basicNum2); 
-    } else if (operator === "divided by") {
-      console.log(basicNum1 / basicNum2);
+    if (operator === "+") {
+      var ans1 = (form1 + form2);
+    } else if (operator === "-") {
+      var ans1 = (form1 - form2);
+    } else if (operator === "*") {
+      var ans1 = (form1 * form2); 
+    } else if (operator === "/") {
+      var ans1 = (form1 / form2);
     }; 
+    document.getElementById("basic-answer-alert").innerHTML = ans1;
 });
-
